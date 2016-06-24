@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c49d3b"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.louisgeek.louisprogessbar.MainActivity">
+
+    <com.louisgeek.louisprogessbar.MyProgessBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:progress="0"
+        app:text_border_isshow="false"
+        />
+    <com.louisgeek.louisprogessbar.MyProgessBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:progress="2"
+        app:text_border_isshow="false"
+        android:indeterminate="false"
+        />
+    <com.louisgeek.louisprogessbar.MyProgessBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:progress="50"
+        app:text_color="#000000"
+        app:left_color="#169711"
+        app:text_border_size="10dp"
+        app:right_color="#1a36be"
+        />
+    <com.louisgeek.louisprogessbar.MyProgessBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:text_border_size="10dp"
+        app:text_border_isshow="false"
+        android:progress="98"
+        />
+    <com.louisgeek.louisprogessbar.MyProgessBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:text_border_size="0dp"
+        android:progress="100"
+        app:text_border_isshow="true"
+        />
+
+</LinearLayout>

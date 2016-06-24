@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="left_height" format="dimension"></attr>
+    <attr name="left_color" format="color"></attr>
+    <attr name="text_size" format="dimension"></attr>
+    <attr name="text_color" format="color"></attr>
+    <attr name="text_offset" format="dimension"></attr>
+    <attr name="text_distance" format="dimension"></attr>
+    <attr name="text_border_color" format="color"></attr>
+    <attr name="text_border_size" format="dimension"></attr>
+    <attr name="text_border_isshow" format="boolean"></attr>
+    <attr name="right_height" format="dimension"></attr>
+    <attr name="right_color" format="color"></attr>
+    <declare-styleable name="MyProgessBarAttrs">
+        <attr name="left_height"></attr>
+        <attr name="left_color"></attr>
+        <attr name="text_size"></attr>
+        <attr name="text_color"></attr>
+        <attr name="text_offset"></attr>
+        <attr name="text_distance"></attr>
+        <attr name="text_border_color"></attr>
+        <attr name="text_border_size"></attr>
+        <attr name="text_border_isshow"></attr>
+        <attr name="right_height"></attr>
+        <attr name="right_color"></attr>
+    </declare-styleable>
+</resources>
