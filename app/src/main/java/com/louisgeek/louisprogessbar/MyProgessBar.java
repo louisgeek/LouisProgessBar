@@ -27,21 +27,21 @@ public class MyProgessBar extends ProgressBar{
     private static final int DEFAULT_HEIGHT_LEFT = 4;//文字右侧进度条高度
 
 
-    private int mLeftHeight=this.dp2px(DEFAULT_HEIGHT_LEFT);
-    private int mLeftColor=DEFAULT_COLOR_LEFT;
-    private int mTextColor=DEFAULT_TEXT_COLOR;
-    private int mTextSize=this.dp2px(DEFAULT_TEXT_SIZE);
-    private int mTextOffset=this.dp2px(DEFAULT_TEXT_OFFSET);
+    protected int mLeftHeight=this.dp2px(DEFAULT_HEIGHT_LEFT);
+    protected int mLeftColor=DEFAULT_COLOR_LEFT;
+    protected int mTextColor=DEFAULT_TEXT_COLOR;
+    protected int mTextSize=this.dp2px(DEFAULT_TEXT_SIZE);
+    protected int mTextOffset=this.dp2px(DEFAULT_TEXT_OFFSET);
     private int mTextDistance=this.dp2px(DEFAULT_TEXT_DISTANCE);
     private int mTextBorderColor=DEFAULT_TEXTBORDER_COLOR;
     private int mTextBorderSize=this.dp2px(DEFAULT_TEXTBORDER_SIZE);
-    private int mRightHeight=this.dp2px(DEFAULT_HEIGHT_RIGHT);
-    private int mRightColor=DEFAULT_COLOR_RIGHT;
+    protected int mRightHeight=this.dp2px(DEFAULT_HEIGHT_RIGHT);
+    protected int mRightColor=DEFAULT_COLOR_RIGHT;
     private boolean mTextBorderIsShow=true;
     private String mText;
     private  int mMaxContentHeight;
     private int mRealWidth;
-    private Paint mPaint;
+    protected Paint mPaint;
     public MyProgessBar(Context context) {
         this(context, null);
     }
@@ -190,7 +190,7 @@ public class MyProgessBar extends ProgressBar{
     }
 
     /**
-     * 设计的是  进度条总和不包含文字区域和文字间距区域
+     * 设计的原则是：  进度条总和不包含文字区域和文字间距区域
      * @param canvas
      */
     @Override
@@ -226,7 +226,7 @@ public class MyProgessBar extends ProgressBar{
             canvas.drawLine(0, 0, leftProgressEndX, 0, mPaint);//画左边进度条
         }
 
-        if (mTextBorderIsShow) {
+        if (mTextBorderIsShow&&mTextBorderSize>0) {
             /**
              * 文字背景
              */
