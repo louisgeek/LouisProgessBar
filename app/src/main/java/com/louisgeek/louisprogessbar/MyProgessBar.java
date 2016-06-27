@@ -16,7 +16,7 @@ public class MyProgessBar extends ProgressBar{
 
     private static final int DEFAULT_TEXT_SIZE = 12;//文字大小
     private static final int DEFAULT_TEXT_COLOR = 0xffFC00D1;//文字颜色
-    private static final int DEFAULT_TEXT_OFFSET = 10;//文字两边的间距的总和
+    private static final int DEFAULT_TEXT_OFFSET = 6;//文字两边的间距的总和
     private static final int DEFAULT_TEXT_DISTANCE = 12;//文字上下的间距总和
     private static final int DEFAULT_TEXTBORDER_SIZE = 2;//边框宽度
     private static final int DEFAULT_TEXTBORDER_COLOR=0xff14BAF1;
